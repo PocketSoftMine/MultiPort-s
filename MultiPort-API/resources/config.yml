@@ -18,7 +18,7 @@ Ports:
 - 25655 : Lobby6
 
 # Enable MultiLobby API
-multiport-api: false
+multilobby-api: false
 
 # Invisible Players in other ports
 invisible-pl-port: true
