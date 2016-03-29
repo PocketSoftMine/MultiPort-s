@@ -3,17 +3,27 @@
 # Example:
 # =-=-=-=-=-=-=
 # Ports:
-# - 19132
-# - 19133
-# - 19134
+# - 19132 : MCPE
+# - 19133 : World
+# - 19134 : SkyWars
+# - "PORT" : "WorldName"
 
 Ports:
-- 19132
-- 19133
-- 19134
-- 19135
-- 25565
-- 26555
-- 25655
+- 19132 : World
+- 19133 : Lobby1
+- 19134 : Lobby2
+- 19135 : Lobby3
+- 25565 : Lobby4
+- 26555 : Lobby5
+- 25655 : Lobby6
+
+# Enable MultiLobby API
+multiport-api: false
+
+# Invisible Players in other ports
+invisible-pl-port: true
+
+# DefaultPort is Disable
+disable-defaultport: false
 
 
