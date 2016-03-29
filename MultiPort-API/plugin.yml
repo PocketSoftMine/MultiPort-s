@@ -1,5 +1,5 @@
 name: MultiPort
-version: "0.1"
+version: "0.0"
 main: PocketSoftMine\Multiport\MultiPort
 load: STARTUP
 author: PocketSoftMine
