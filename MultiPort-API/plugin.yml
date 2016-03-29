@@ -1,4 +1,4 @@
-name: BetaTester
+name: MultiPort
 version: "0.1"
 main: PocketSoftMine\Multiport\MultiPort
 load: STARTUP
