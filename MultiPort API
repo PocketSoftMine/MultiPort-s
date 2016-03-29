@@ -1,0 +1,10 @@
+name: BetaTester
+version: "0.1"
+main: PocketSoftMine\Multiport\MultiPort
+load: STARTUP
+author: PocketSoftMine
+api: 
+- 1.0.0
+- 1.13.0
+- 1.13.1
+- 2.0.0
