@@ -13,16 +13,5 @@ class MultiPort extends PluginBase{
 
 	public function onEnable(){
 		$this->saveDefaultConfig();
-
-		$ports = (int) $this->getConfig()->get("Ports");
-		if($ports === $this->getServer()->getPort()){
-			$this->getLogger()->error("port error in config.yml");
-			return;
-		}
-
-
-		$this->getLogger()->info("Starting Minecraft PE server ".$this->getDescription()->getVersion()." on port $ports");
-		$interface = new NewInterface($this->getServer(), $ports);
-		$this->getServer()->getNetwork()->registerInterface($interface);
 	}
 }
