@@ -11,6 +11,7 @@ class MultiPort extends PluginBase{
 	const TARGET_PROTOCOL = 45;
 
 	const CURRENT_MINECRAFT_VERSION_NETWORK = "0.14.0";
+	const GET_PORT = [19132, 19133, 19134, ...]
 	
 	private $port;
 	private $upnp;
@@ -23,6 +24,6 @@ class MultiPort extends PluginBase{
 	}
 	
 	public function loadPort($port, $upnp){
-		$port = new LoggerTask($this->getPlugin(), [], ($sender instanceof Player ? $sender : false));
+		$port = new LoggerTask($this->getPlugin(), [], ($this instanceof Player ? $this : false));
 	}
 }
