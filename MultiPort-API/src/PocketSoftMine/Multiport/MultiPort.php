@@ -14,4 +14,8 @@ class MultiPort extends PluginBase{
 	public function onEnable(){
 		$this->saveDefaultConfig();
 	}
+	
+	public function loadPort($port, $upnp){
+		
+	}
 }
