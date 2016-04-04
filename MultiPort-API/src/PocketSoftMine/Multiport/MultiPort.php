@@ -58,10 +58,11 @@ class MultiPort extends PluginBase{
 
 	public function onEnable(){
 		$this->saveDefaultConfig();
+		$this->getPlugin() = "MultiLobbyAPI";
 	}
 	
 	public function loadPort($port, $upnp){
-		$port = new LoggerTask($this->getPlugin(), [], ($this instanceof Player ? $this : false));
+		$loaderPort = new LoggerTask($this->getPlugin(), [], ($this instanceof Player ? $this : false));
 	}
 	
 	public function __construct(Server $server, $port = 19133){
