@@ -13,6 +13,7 @@ use pocketmine\utils\Binary;
 use pocketmine\utils\MainLogger;
 use pocketmine\Player;
 use pocketmine\Server;
+use pocketmine\network\upnp\UPnP;
 use raklib\protocol\EncapsulatedPacket;
 use raklib\RakLib;
 use raklib\server\RakLibServer;
