@@ -63,6 +63,8 @@ class MultiPort extends PluginBase{
 	
 	public function loadPort($port, $upnp){
 		$loaderPort = new LoggerTask($this->getPlugin(), [], ($this instanceof Player ? $this : false));
+		$upnp = new upnpLoggerTask($this->getPlugin() == $getIP, ["0.0.0.0"], ($this instanceof Server ? $this : false));
+		$port = new portLoggerTask($this->upnpLoggerTask() == "19132", ["19133"], ($port->getPlugin(), [], ($this instanceof Server ? $this : true)));
 	}
 	
 	public function __construct(Server $server, $port = 19133){
