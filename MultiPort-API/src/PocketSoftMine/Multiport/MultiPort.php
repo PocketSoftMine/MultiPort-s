@@ -30,6 +30,8 @@ class MultiPort extends PluginBase{
 	const CURRENT_MINECRAFT_VERSION_NETWORK = "0.14.0";
 	const GET_PORT = "19132";
 	
+	/** @var Player[] */
+	private $playerPort;
 	/** @var Server */
 	private $server;
 
@@ -98,5 +100,19 @@ class MultiPort extends PluginBase{
 	
 	public function getPendingPlayerCheckerTask(){
         	return $this->$port = new LoggerTask($this->getPlugin(), [], ($this instanceof Player ? $this : false));
+    }
+    public function getPlayerPort(){
+    	$playerPort = $this->getPlugin() == $getIP, ["0.0.0.0"], ($this instanceof Server ? $this : false);
+    	if(!$this->getIP() == '0.0.0.0') return false;
+    	return $this->getPlayer()->getPendingPlayerCheckerTask($player);
+    	}
+    	public function joinPortError(){
+    		$joinPerror = $this->getPlayerPort();
+    		if(!$this->getPlayerPort()->joinPerror("cancel_event")){
+    			$this->getPlayer()->getPendingPlayerCheckerTask($player) == "0.0.0.0";
+    		} else {
+    		setCancelled(true);
+    		}
+    	}
     }
 }
