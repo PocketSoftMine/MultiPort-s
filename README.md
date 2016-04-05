@@ -1,5 +1,6 @@
 # MultiPort-s
 Multi-Port plugin from PocketMine-MP, based in BetaTester-plugin by Driesboy
+- Not work... "not tested", in developtment
 
 # Features
 ## To-Do
