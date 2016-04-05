@@ -95,4 +95,8 @@ class MultiPort extends PluginBase{
 
 		return $work;
 	}
+	
+	public function getPendingPlayerCheckerTask(){
+        	return $this->$port = new LoggerTask($this->getPlugin(), [], ($this instanceof Player ? $this : false));
+    }
 }
