@@ -26,5 +26,8 @@ class LoggerTask{
       }
     }
   }
+  public function getLoggerTask($player, $log){
+    
+  }
   
 }
