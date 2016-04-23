@@ -27,7 +27,7 @@ class MultiPort extends PluginBase{
 
 	const TARGET_PROTOCOL = 45;
 
-	const CURRENT_MINECRAFT_VERSION_NETWORK = "0.14.0";
+	const CURRENT_MINECRAFT_VERSION_NETWORK = "0.14.1";
 	const GET_PORT = "19132";
 	
 	/** @var Player[] */
