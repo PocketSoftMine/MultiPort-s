@@ -2,7 +2,7 @@
 
 namespace PocketSoftMine\Multiport\MultiPort;
 
-use Multiport\task\LoggerTask;
+use PocketSoftMine\Multiport\task\LoggerTask;
 
 use pocketmine\network\AdvancedSourceInterface;
 use pocketmine\event\player\PlayerCreationEvent;
@@ -23,7 +23,7 @@ use pocketmine\network\Network;
 use pocketmine\network\CachedEncapsulatedPacket;
 use pocketmine\plugin\PluginBase;
 
-class MultiPort extends PluginBase{
+class MultiPort extends PluginBase {
 
 	const TARGET_PROTOCOL = 107;
 
@@ -32,6 +32,7 @@ class MultiPort extends PluginBase{
 	
 	/** @var Player[] */
 	private $playerPort;
+
 	/** @var Server */
 	private $server;
 
@@ -55,7 +56,7 @@ class MultiPort extends PluginBase{
 	
 	private $port;
 	private $upnp;
-	
+
 	private $getIP;
 	private $loaderPort;
 
@@ -71,7 +72,6 @@ class MultiPort extends PluginBase{
 	}
 	
 	public function __construct(Server $server, $port = 19133){
-
 		$this->server = $server;
 		$this->identifiers = [];
 
@@ -89,8 +89,9 @@ class MultiPort extends PluginBase{
 			$work = true;
 			while($this->interface->handlePacket()){
 		}
-	} if($this->rakLib->isTerminated()){
-			$this->network->unregisterInterface($this);
+	}
+	if($this->rakLib->isTerminated()){
+		    $this->network->unregisterInterface($this);
 
 			throw new \Exception("RakLib Thread crashed");
 		}
@@ -99,8 +100,9 @@ class MultiPort extends PluginBase{
 	}
 	
 	public function getPendingPlayerCheckerTask(){
-        	return $this->$port = new LoggerTask($this->getPlugin(), [], ($this instanceof Player ? $this : false));
+        	return $this->port = new LoggerTask($this->getPlugin(), [], ($this instanceof Player ? $this : false));
     }
+
     public function getPlayerPort(){
     	$playerPort = $this->getPlugin() == $getIP, ["0.0.0.0"], ($this instanceof Server ? $this : false);
     	if(!$this->getIP() == '0.0.0.0') return false;
@@ -111,7 +113,6 @@ class MultiPort extends PluginBase{
     		if(!$this->getPlayerPort()->joinPerror("cancel_event")){
     			$this->getPlayer()->getPendingPlayerCheckerTask($player) == "0.0.0.0";
     		} else {
-    		setCancelled(true);
     		}
     	}
     }

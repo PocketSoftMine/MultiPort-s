@@ -8,26 +8,23 @@ use pocketmine\Player;
 use pocketmine\event;
 use pocketmine\PocketMine;
 
-class LoggerTask{
-  public function onEnable(){
-    
-    private $loggertask;
-    
-    if(!$this->log($loggertask)->getLoggerTask($task, $name, $player, $send, $loggertask) == null){
-      
-      return null;
-      
-      $task = new loggertask($this->getPlugin()->getLoggerTask() == false);
-      if(!$task == true){
-      
-        return true;
-      
-        break;
-      }
+class LoggerTask {
+
+    public function onEnable(){
+        private $loggertask;
+        if (!$this->log($loggertask)->getLoggerTask($task, $name, $player, $send, $loggertask) == null){
+            return null;
+
+            $task = new loggertask($this->getPlugin()->getLoggerTask() == false);
+
+            if (!$task == true) {
+                return true;
+                break;
+            }
+        }
     }
-  }
-  public function getLoggerTask($player, $log){
-    
-  }
-  
+
+    public function getLoggerTask($player, $log){
+
+    }
 }
