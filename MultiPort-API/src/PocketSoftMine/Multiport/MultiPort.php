@@ -25,9 +25,9 @@ use pocketmine\plugin\PluginBase;
 
 class MultiPort extends PluginBase{
 
-	const TARGET_PROTOCOL = 45;
+	const TARGET_PROTOCOL = 107;
 
-	const CURRENT_MINECRAFT_VERSION_NETWORK = "0.14.1";
+	const CURRENT_MINECRAFT_VERSION_NETWORK = "1.0.7.0";
 	const GET_PORT = "19132";
 	
 	/** @var Player[] */
